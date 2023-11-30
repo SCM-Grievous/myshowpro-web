@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Settings - MyShowPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" href="img/circle_w_horse.png">
+</head>
+<body class="bg-dark text-light">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-sm sticky-top bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.html" style="width: 175px;">
+                <img class="img-fluid" src="img/banner_w_logo.png" alt="MyShowPro logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="btn btn-primary text-light" href="shows.html">Shows</a>
+                    <a class="btn btn-primary text-light" href="riders.html">Riders</a>
+                    <a class="btn btn-primary text-light active" href="#">Account</a>
+                </div>
+            </div>
+            <a href="account.html" class="btn btn-primary text-light">[username]</a>
+            <a href="index.html" class="btn btn-light text-primary">Log out</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-5 bg-dark text-center text-bg-primary">
+        <h1 class="fw-bold">Account settings</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <div class="container w-75">
+            <h3 class="fw-bold">Details</h3>
+            <div class="mb-3">
+                <p style="font-size: 16pt;">Username: <span style="font-size: 15pt;">JohnDoe</span></p>
+            </div>
+            <div class="mb-3">
+                <p style="font-size: 16pt;">Account type: <span style="font-size: 15pt;">Show administrator</span></p>
+            </div>
+            <a href="admin.html" class="btn btn-primary text-light">Go to Admin Dashboard</a>
+            <hr>
+            <h3 class="fw-bold">Change password</h3>
+            <div class="mb-3">
+                <label for="currentPassword" class="form-label ">Current Password:</label>
+                <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+                <label for="newPassword" class="form-label">New Password:</label>
+                <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm New Password:</label>
+                <input type="password" class="form-control" id="confirmPassword">
+            </div>
+            <button type="submit" class="btn btn-primary">Change Password</button>
+            <hr>
+            <div class="text-center">
+                <a href="index.html" class="btn btn-danger w-100">Log Out</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3 text-center">
+        <div class="container">
+            <p>&copy; 2023 HorseShowApp</p>
+        </div>
+    </footer>
+
+</body>
+</html>
